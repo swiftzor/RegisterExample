@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Register Example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="../js/jQuery/jquery-2.1.3.min.js"></script>
+        <script src="../js/bootstrap/bootstrap.min.js"></script>
+        <script src="../js/mustache/mustache.min.js"></script>
+        <script src="../js/underscore/underscore1.8.2.min.js"></script>
+        <script src="../js/backbone/backbone1.1.2.min.js"></script>
+        <script src="../js/content/main.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.min.css">
+        
+        <script>
+            $(function() {
+                var register = new RegisterContent();
+                register.render();
+            });
+        </script>
+    </head>
+    <body>
+        <div id="content_body">
+            <div class="col-md-12">
+                <h1>Basic Register Example</h1>
+                <hr>
+                <div id="items" class="col-md-offset-2 col-md-10 col-md-offset-2">
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="col-md-offset-2 col-md-2">
+                    <button id="add" class="btn btn-default">Add Item</button>
+                    <button id="total" class="btn btn-primary">Get Total</button>
+                </div>
+                <div class="col-md-2 col-md-offset-2">
+                    <h4><label id="totalAmt" class="label label-primary">Total: $0.00</label></h4>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
